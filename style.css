@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,83 +8,96 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f3f4f6;
     color: #333;
-    background-color: #f9f9f9;
-    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #00aaff;
 }
 
 /* Header Section */
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 20px;
     text-align: center;
-    padding: 20px;
 }
-
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 .profile-pic {
     width: 150px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
-
-h1 {
-    margin: 10px 0;
-    font-size: 2em;
-    color: #333;
+header h1 {
+    font-size: 2.5em;
 }
-
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 .social-links a {
     margin: 0 10px;
-    color: #0073b1;
+    color: #00aaff;
     text-decoration: none;
+    font-size: 1.2em;
 }
-
 .social-links a:hover {
-    text-decoration: underline;
+    color: #fff;
 }
 
 /* Section Styling */
 section {
-    margin: 40px 0;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-
-h2 {
-    font-size: 1.8em;
-    color: #0073b1;
+section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+section ul li {
     margin-bottom: 10px;
-}
-
-/* Experience and Projects */
-h3 {
-    font-size: 1.4em;
-    margin-top: 10px;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-.project {
-    margin-top: 20px;
-}
-
-.project a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project a:hover {
-    color: #0073b1;
 }
 
 /* Contact Section */
 #contact p {
     text-align: center;
-    margin-top: 10px;
+    font-size: 1.1em;
 }
 
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
