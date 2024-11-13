@@ -1,1 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 0 20px;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0073b1;
+    margin-bottom: 10px;
+}
+
+/* Experience and Projects */
+h3 {
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #0073b1;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    margin-top: 10px;
+}
 
