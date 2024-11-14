@@ -256,12 +256,12 @@ body {
 
 /* Logo Styling */
 .experience-item img {
-    width: 50px; /* Smaller logo size */
-    height: 50px;
+    width: 60px; /* Fixed smaller size */
+    height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
     border: 2px solid #555;
-    border-radius: 50%; /* Makes it look more like a logo */
+    border-radius: 50%; /* Gives a circular look */
 }
 
 /* Experience Details Styling */
