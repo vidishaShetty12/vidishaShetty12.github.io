@@ -118,76 +118,120 @@
 </head>
 <body>
 
-    <!-- Experience Section -->
+        <!-- Experience Section -->
     <section id="experience" class="content-section">
         <h2>Experience</h2>
         <div class="experience-container">
 
-            <!-- Experience Card 1 -->
+            <!-- Experience Card 1 with Modal Trigger -->
             <div class="experience-card">
                 <img src="https://github.com/vidishaShetty12/vidishaShetty12.github.io/blob/main/ColAI.png?raw=true" alt="ColAI - Machine Learning Research Assistant" class="experience-logo">
                 <div class="experience-details">
                     <h3>Machine Learning Research Assistant | ColAI, Boston, USA</h3>
                     <p><strong>Sep 2024 - Present</strong></p>
-                    <ul>
-                        <li>Spearheaded development of real-time geolocation tracking, enhancing user engagement by 20%.</li>
-                        <li>Conducted Exploratory Data Analysis (EDA) and feature engineering, optimizing model performance and supporting cross-functional collaboration.</li>
-                        <li>Streamlined reporting processes in collaboration with cross-functional teams, reducing report generation time by 15%.</li>
-                        <li>Managed project documentation and timelines using Jira and Confluence, ensuring timely delivery of key projects.</li>
-                    </ul>
+                    <button onclick="openModal('modal1')" class="experience-more-button">Read More</button>
                 </div>
             </div>
 
-            <!-- Experience Card 2 -->
+            <!-- Modal for Experience Card 1 -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+                    <div class="modal-header">
+                        <h2>Machine Learning Research Assistant | ColAI, Boston, USA</h2>
+                    </div>
+                    <p>Spearheaded development of real-time geolocation tracking, enhancing user engagement by 20%. Conducted Exploratory Data Analysis (EDA) and feature engineering, optimizing model performance and supporting cross-functional collaboration. Streamlined reporting processes, reducing report generation time by 15% and ensuring timely project delivery using Jira and Confluence.</p>
+                </div>
+            </div>
+
+            <!-- Experience Card 2 with Modal Trigger -->
             <div class="experience-card">
                 <img src="https://github.com/vidishaShetty12/vidishaShetty12.github.io/blob/main/Merkle.png?raw=true" alt="Merkle - SQL Developer" class="experience-logo">
                 <div class="experience-details">
                     <h3>SQL Developer | Merkle (formerly Ugam Solution Pvt Ltd), Bangalore, India</h3>
                     <p><strong>Nov 2021 - Aug 2022</strong></p>
-                    <ul>
-                        <li>Developed automated workflows for large-scale data analytics using Python and SQL, increasing efficiency by 30%.</li>
-                        <li>Streamlined ETL processes with Informatica PowerCenter, achieving a 30% efficiency boost.</li>
-                        <li>Engineered data quality control solutions for reliable data pipelines across 100+ production systems.</li>
-                        <li>Led the migration of BI reports to Tableau, integrating machine learning insights for enhanced analytics and visualization.</li>
-                    </ul>
+                    <button onclick="openModal('modal2')" class="experience-more-button">Read More</button>
                 </div>
             </div>
 
-            <!-- Experience Card 3 -->
+            <!-- Modal for Experience Card 2 -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+                    <div class="modal-header">
+                        <h2>SQL Developer | Merkle, Bangalore, India</h2>
+                    </div>
+                    <p>Developed automated workflows for large-scale data analytics using Python and SQL, increasing efficiency by 30%. Streamlined ETL processes, engineered data quality control solutions, and led the migration of BI reports to Tableau, integrating machine learning insights for enhanced analytics.</p>
+                </div>
+            </div>
+
+            <!-- Experience Card 3 with Modal Trigger -->
             <div class="experience-card">
                 <img src="https://github.com/vidishaShetty12/vidishaShetty12.github.io/blob/main/The%20Sparks%20Foundation.png?raw=true" alt="The Sparks Foundation - Data Scientist" class="experience-logo">
                 <div class="experience-details">
                     <h3>Data Scientist | The Sparks Foundation, Bangalore, India</h3>
                     <p><strong>Jul 2021 - Aug 2021</strong></p>
-                    <ul>
-                        <li>Improved financial forecasting model accuracy by 25% through regression and sensitivity analysis.</li>
-                        <li>Developed an A/B testing framework, enhancing recommendation accuracy by 30%.</li>
-                        <li>Automated data preprocessing pipelines, reducing data preparation time by 15%, expediting model training.</li>
-                        <li>Collaborated cross-functionally to refine algorithms, enhancing business impact through model insights.</li>
-                    </ul>
+                    <button onclick="openModal('modal3')" class="experience-more-button">Read More</button>
                 </div>
             </div>
 
-            <!-- Experience Card 4 -->
+            <!-- Modal for Experience Card 3 -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+                    <div class="modal-header">
+                        <h2>Data Scientist | The Sparks Foundation, Bangalore, India</h2>
+                    </div>
+                    <p>Improved financial forecasting model accuracy by 25% through regression and sensitivity analysis. Developed an A/B testing framework that enhanced recommendation accuracy by 30% and automated data preprocessing pipelines, reducing data preparation time by 15%.</p>
+                </div>
+            </div>
+
+            <!-- Experience Card 4 with Modal Trigger -->
             <div class="experience-card">
                 <img src="https://github.com/vidishaShetty12/vidishaShetty12.github.io/blob/main/Adevole.png?raw=true" alt="Adevole - Data Scientist" class="experience-logo">
                 <div class="experience-details">
                     <h3>Data Scientist | Adevole - Shopify, Mumbai, India</h3>
                     <p><strong>May 2019 - Apr 2021</strong></p>
-                    <ul>
-                        <li>Led a team in developing predictive models and retargeting strategies, driving $1.5M in revenue growth.</li>
-                        <li>Designed and implemented Tableau dashboards and predictive analytics, increasing conversion rates by 30%.</li>
-                        <li>Established A/B testing protocols with Adobe Analytics, optimizing marketing strategies and data-driven insights.</li>
-                        <li>Managed project workflow using Agile methodology, improving project delivery times by 30%.</li>
-                    </ul>
+                    <button onclick="openModal('modal4')" class="experience-more-button">Read More</button>
+                </div>
+            </div>
+
+            <!-- Modal for Experience Card 4 -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+                    <div class="modal-header">
+                        <h2>Data Scientist | Adevole - Shopify, Mumbai, India</h2>
+                    </div>
+                    <p>Led a team in developing predictive models and retargeting strategies, driving $1.5M in revenue growth. Designed and implemented Tableau dashboards and predictive analytics, increasing conversion rates by 30% and establishing A/B testing protocols with Adobe Analytics.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-</body>
-</html>
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        // Function to open modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            const modals = document.getElementsByClassName("modal");
+            for (let i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
     <!-- Projects Section -->
 <section id="projects" class="content-section">
