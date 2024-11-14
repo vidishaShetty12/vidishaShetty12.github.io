@@ -139,11 +139,14 @@ section {
     text-align: left;
 }
 
-/* Skills Section */
+/* Skills Section Styling */
 #skills {
-    background-color: #2d3748;
-    color: #ffffff;
     padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1b1b1b; /* Dark background for contrast */
+    color: #fff;
 }
 
 #skills h2 {
@@ -152,25 +155,51 @@ section {
     margin-bottom: 30px;
 }
 
+/* Skills Container as Grid */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts number of columns based on screen width */
     gap: 20px;
+    width: 100%;
 }
 
+/* Individual Skill Card */
 .skill-card {
     background-color: #333;
     color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.skill-card .icon {
+    margin-bottom: 15px;
+}
+
+.skill-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Title and Description Styling */
+.skill-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00aaff; /* Optional: color for skill title */
+}
+
+.skill-card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #ccc;
 }
 
 /* Experience Section */
