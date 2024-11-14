@@ -134,18 +134,6 @@ header p {
     color: #e2e8f0;
 }
 
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack items vertically on small screens */
-        text-align: center;
-    }
-
-    .about-image {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 20px;
-    }
-}
 
 /* Skills Section Styling */
 #skills {
