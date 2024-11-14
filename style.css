@@ -132,16 +132,18 @@ section p, section ul {
 
 #skills h2 {
     font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
+/* Skills Container as Grid */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 
+/* Individual Skill Card */
 .skill-card {
     background-color: #333;
     color: #fff;
@@ -157,6 +159,7 @@ section p, section ul {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Icon Styling */
 .skill-card .icon {
     margin-bottom: 15px;
 }
@@ -166,16 +169,19 @@ section p, section ul {
     height: 40px;
 }
 
+/* Title and Description Styling */
 .skill-card h3 {
     font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .skill-card p {
-    font-size: 0.9em;
-    line-height: 1.5;
+    font-size: 0.95em;
+    line-height: 1.6;
     color: #ccc;
 }
+
 
 /* Experience Section Styling */
 #experience {
