@@ -256,9 +256,9 @@ body {
 
 /* Logo Styling */
 .experience-logo {
-    width: 60px; /* Smaller logo size */
-    height: 60px;
-    object-fit: contain;
+    width: 60px; /* Set a uniform width */
+    height: 60px; /* Set a uniform height */
+    object-fit: cover; /* Ensures the image fills the space, cropping if necessary */
     margin-bottom: 15px;
     border: 2px solid #555;
     border-radius: 10px; /* Optional rounded edges */
