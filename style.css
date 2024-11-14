@@ -256,8 +256,8 @@ body {
 
 /* Logo Styling */
 .experience-logo {
-    width: 80px; /* Smaller logo size */
-    height: 80px;
+    width: 60px; /* Smaller logo size */
+    height: 60px;
     object-fit: contain;
     margin-bottom: 15px;
     border: 2px solid #555;
