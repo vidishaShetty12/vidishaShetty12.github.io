@@ -242,6 +242,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
+    position: relative;
 }
 
 .experience-card:hover {
@@ -249,13 +250,19 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
 }
 
-/* Experience Image Styling */
-.experience-image {
-    width: 100%;
-    height: 150px;
+/* Logo Styling */
+.experience-logo {
+    width: 60px; /* Small size to look like a logo */
+    height: 60px;
     object-fit: cover;
-    border-bottom: 2px solid #444; /* Adds a separator between image and content */
+    border-radius: 50%; /* Make it circular for a logo effect */
     margin-bottom: 15px;
+    background-color: #333; /* Background color for the logo area */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #555; /* Border around the logo */
 }
 
 /* Experience Details */
@@ -263,12 +270,14 @@ body {
     font-size: 1.3em;
     margin-bottom: 10px;
     color: #fff; /* White text for titles */
+    text-align: center;
 }
 
 .experience-details p {
     font-size: 0.9em;
     margin-bottom: 10px;
     color: #ccc; /* Lighter text for date */
+    text-align: center;
 }
 
 .experience-details ul {
