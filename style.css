@@ -139,22 +139,33 @@ section {
     text-align: left;
 }
 
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
 /* Skills Section Styling */
 #skills {
-    background-color: #1b1b1b; /* Dark background for contrast */
-    color: #ffffff;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #skills h2 {
     font-size: 2.5em;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 30px;
 }
 
 /* Skills Container as Grid */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts number of columns based on screen width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
 }
@@ -181,15 +192,15 @@ section {
 }
 
 .skill-card .icon img {
-    width: 40px;
-    height: 40px;
+    width: 24px; /* Small icon size */
+    height: 24px;
 }
 
 /* Title and Description Styling */
 .skill-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #00aaff; /* Optional: color for skill title */
+    color: #fff;
 }
 
 .skill-card p {
@@ -197,7 +208,6 @@ section {
     line-height: 1.6;
     color: #ccc;
 }
-
 /* Experience Section */
 #experience {
     padding: 50px 20px;
