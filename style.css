@@ -254,51 +254,66 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Logo Styling */
-.experience-item img {
-    width: 60px; /* Fixed smaller size */
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    border: 2px solid #555;
-    border-radius: 50%; /* Gives a circular look */
+/* Button to Open Modal */
+.experience-more-button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
 
-/* Experience Details Styling */
-.experience-details h3 {
-    font-size: 1.4em;
-    color: #00aaff; /* Accent color */
-    margin: 10px 0 10px;
+.experience-more-button:hover {
+    background-color: #0088cc;
+}
+
+/* Modal (Pop-up) Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #00aaff;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.experience-details p {
-    font-size: 0.95em;
-    color: #ccc;
-    margin: 5px 0 15px;
-    font-weight: 500;
-}
-
-.experience-details ul {
-    padding-left: 20px;
-    list-style-type: none; /* Removes default bullet points */
-    color: #ddd;
-    font-size: 0.9em;
-}
-
-/* Custom Bullets */
-.experience-details ul li::before {
-    content: "•";
-    color: #00aaff; /* Accent color for bullet points */
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-}
-
-.experience-details li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+.modal-close:hover,
+.modal-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Projects Section Styling */
