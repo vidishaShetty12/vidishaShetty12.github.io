@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f3f4f6;
     color: #333;
     line-height: 1.6;
@@ -20,6 +20,7 @@ nav {
     background-color: #333;
     padding: 10px 0;
     z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 nav ul {
     display: flex;
@@ -33,6 +34,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 nav ul li a:hover {
     color: #00aaff;
@@ -44,6 +46,7 @@ header {
     color: #fff;
     padding: 100px 20px;
     text-align: center;
+    background-image: linear-gradient(135deg, #333, #555);
 }
 .header-content {
     max-width: 800px;
@@ -51,11 +54,14 @@ header {
 }
 .profile-pic {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 header h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 header p {
     font-size: 1.2em;
@@ -66,6 +72,7 @@ header p {
     color: #00aaff;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 .social-links a:hover {
     color: #fff;
@@ -76,29 +83,82 @@ section {
     padding: 50px 20px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 section h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
-    text-align: center;
+    position: relative;
 }
-section ul {
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #00aaff;
+    display: block;
+    margin: 10px auto;
+}
+section p, section ul {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Skills List Styling */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#skills ul li {
+    background-color: #e0e7ff;
+    color: #333;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
     list-style-type: none;
-    padding: 0;
 }
-section ul li {
-    margin-bottom: 10px;
+
+/* Experience and Projects Styling */
+h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 20px;
+}
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.project a:hover {
+    color: #005f8a;
 }
 
 /* Contact Section */
 #contact p {
-    text-align: center;
     font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+}
+footer p {
+    margin: 0;
 }
 
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
-
