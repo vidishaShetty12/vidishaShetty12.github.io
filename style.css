@@ -258,18 +258,29 @@ body {
     margin-bottom: 10px;
 }
 
-/* Projects Section */
+/* Projects Section Styling */
 #projects {
     padding: 50px 20px;
-    background-color: #e2e8f0;
+    max-width: 1400px; /* Increased max-width for wider layout */
+    margin: 0 auto;
+    text-align: center;
 }
 
+#projects h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Projects Container with adjusted grid width */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Increased min-width for larger cards */
     gap: 20px;
+    width: 100%;
 }
 
+/* Individual Project Card */
 .project-card {
     background-color: #333;
     color: #fff;
@@ -285,6 +296,14 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Project Image Styling */
+.project-image {
+    width: 100%;
+    height: 250px; /* Increased height for larger display */
+    object-fit: cover;
+}
+
+/* Project Details */
 .project-details {
     padding: 15px;
 }
@@ -298,6 +317,13 @@ body {
     font-size: 0.9em;
     margin-bottom: 10px;
     color: #ccc;
+}
+
+.project-details ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 0.85em;
+    color: #ddd;
 }
 
 .project-details a {
