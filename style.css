@@ -122,20 +122,59 @@ section p, section ul {
     text-align: left;
 }
 
-/* Skills List Styling */
-#skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Skills Section Styling */
+#skills {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
-#skills ul li {
-    background-color: #e0e7ff;
+
+#skills h2 {
+    font-size: 2.5em;
     color: #333;
-    margin: 5px 10px;
-    padding: 10px 15px;
-    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card .icon {
+    margin-bottom: 15px;
+}
+
+.skill-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
     font-size: 0.9em;
-    list-style-type: none;
+    line-height: 1.5;
+    color: #ccc;
 }
 
 /* Experience Section Styling */
