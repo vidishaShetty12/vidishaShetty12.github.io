@@ -141,12 +141,8 @@ section {
 
 /* Skills Section Styling */
 #skills {
-    padding: 50px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
     background-color: #1b1b1b; /* Dark background for contrast */
-    color: #fff;
+    color: #ffffff;
 }
 
 #skills h2 {
@@ -158,7 +154,7 @@ section {
 /* Skills Container as Grid */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts number of columns based on screen width */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts number of columns based on screen width */
     gap: 20px;
     width: 100%;
 }
