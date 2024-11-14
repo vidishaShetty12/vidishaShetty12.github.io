@@ -123,6 +123,7 @@ header p {
     height: 250px; /* Ensures circular shape */
     border-radius: 50%; /* Circular shape */
     object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Text Styling */
