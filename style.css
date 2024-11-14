@@ -236,11 +236,14 @@ body {
 
 /* Experience Logo Styling */
 .experience-item img {
-    width: 100%;
-    height: 150px;
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
     object-fit: cover;
     margin-bottom: 15px;
-}
+    border-radius: 5px; /* Optional: add rounding for a polished look */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 /* Experience Title and Details Styling */
 .experience-details h3 {
