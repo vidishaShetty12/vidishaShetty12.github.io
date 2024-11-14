@@ -117,13 +117,13 @@ header p {
     gap: 20px;
 }
 
-/* Image Styling */
+/* Image Styling for Rectangular Shape */
 .about-image {
-    width: 250px; /* Fixed width for the image */
-    height: 250px; /* Ensures circular shape */
-    border-radius: 50%; /* Circular shape */
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 10px; /* Slight rounding for a polished look */
     object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
 }
 
 /* Text Styling */
