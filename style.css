@@ -314,6 +314,44 @@ header p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Projects Section Styling */
+#projects {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Projects Container as Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 /* Project Image Styling */
 .project-image {
     width: 100%;
