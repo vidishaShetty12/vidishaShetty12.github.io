@@ -209,65 +209,80 @@ body {
     color: #ccc;
 }
 
-/* Experience Container as Grid */
+/* Experience Section Styling */
+#experience {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#experience h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Experience Container as a Grid */
 .experience-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
 }
 
-/* Individual Experience Card */
+/* Individual Experience Item */
 .experience-item {
     background-color: #333;
     color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+    border-radius: 15px;
     padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 .experience-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Experience Logo Styling */
+/* Logo Styling */
 .experience-item img {
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    object-fit: cover;
+    width: 60px; /* Smaller logo size */
+    height: 60px;
+    object-fit: contain;
     margin-bottom: 15px;
-    border-radius: 5px; /* Optional: add rounding for a polished look */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;
 }
 
-/* Experience Title and Details Styling */
+/* Experience Details Styling */
 .experience-details h3 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
+    font-size: 1.4em;
     color: #fff;
+    margin: 10px 0 10px;
+    text-align: center;
 }
 
 .experience-details p {
     font-size: 0.9em;
     color: #ccc;
-    margin-bottom: 10px;
+    margin: 5px 0 15px;
+    text-align: center;
 }
 
 .experience-details ul {
     padding-left: 20px;
     list-style-type: disc;
-    font-size: 0.85em;
     color: #ddd;
 }
 
 .experience-details li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 /* Projects Section Styling */
