@@ -261,7 +261,7 @@ body {
 /* Projects Section Styling */
 #projects {
     padding: 50px 20px;
-    max-width: 1400px; /* Increased max-width for wider layout */
+    max-width: 1200px; /* Adjust width as needed */
     margin: 0 auto;
     text-align: center;
 }
@@ -272,10 +272,10 @@ body {
     margin-bottom: 30px;
 }
 
-/* Projects Container with adjusted grid width */
+/* Projects Container as Grid */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Increased min-width for larger cards */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Wider columns */
     gap: 20px;
     width: 100%;
 }
@@ -299,7 +299,7 @@ body {
 /* Project Image Styling */
 .project-image {
     width: 100%;
-    height: 250px; /* Increased height for larger display */
+    height: 200px; /* Adjust height for larger images */
     object-fit: cover;
 }
 
@@ -309,30 +309,29 @@ body {
 }
 
 .project-details h3 {
-    font-size: 1.3em;
+    font-size: 1.4em; /* Larger title */
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 .project-details p {
-    font-size: 0.9em;
+    font-size: 1em; /* Adjust font size for better readability */
     margin-bottom: 10px;
-    color: #ccc;
+    color: #ddd;
+    line-height: 1.6; /* Improved readability */
+}
+
+.project-details h4 {
+    font-size: 1.1em;
+    color: #00aaff; /* Optional: add color to subheading */
+    margin-top: 15px;
 }
 
 .project-details ul {
     padding-left: 20px;
     list-style-type: disc;
-    font-size: 0.85em;
-    color: #ddd;
-}
-
-.project-details a {
-    color: #00aaff;
-    text-decoration: none;
-}
-
-.project-details a:hover {
-    text-decoration: underline;
+    font-size: 1em;
+    color: #ccc;
 }
 
 /* Education Section */
