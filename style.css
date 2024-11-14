@@ -439,29 +439,56 @@ body {
     color: #ccc;
 }
 
-/* Education Section */
-#education {
+/* Volunteering Section */
+#volunteering {
     padding: 50px 20px;
-    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
 }
 
-.education-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+#volunteering h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
-.education-box {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 600px;
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.5;
+/* Container for Two-Column Grid */
+.volunteering-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Align text to the left inside columns */
+}
+
+/* Individual Volunteer Item */
+.volunteer-item {
+    background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.volunteer-item h3 {
+    font-size: 1.5em;
+    color: #00aaff;
+    margin-bottom: 5px;
+}
+
+.volunteer-item p {
+    font-size: 1em;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.volunteer-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.volunteer-item li {
+    color: #ccc;
+    line-height: 1.6;
 }
 
 /* Contact Section */
