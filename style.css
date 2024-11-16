@@ -511,22 +511,21 @@ body {
     background-color: #222;
 }
 
-/* Read More Link */
 .read-more-link {
-    display: inline-block; /* Ensure it's treated as a button */
+    display: inline-block !important; /* Ensure it's displayed */
     text-align: center;
-    background-color: #007BFF; /* Blue background */
-    color: #fff; /* White text */
-    padding: 10px 15px; /* Add padding for a button-like appearance */
-    font-size: 0.9em; /* Adjust font size */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    margin-top: 10px; /* Add spacing above the button */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .read-more-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 /* Volunteering Section */
