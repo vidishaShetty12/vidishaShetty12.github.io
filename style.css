@@ -517,12 +517,12 @@ body {
     text-align: center;
     background-color: #007BFF; /* Blue background */
     color: #fff; /* White text */
-    padding: 10px 15px;
-    font-size: 0.9em;
+    padding: 10px 15px; /* Add padding for a button-like appearance */
+    font-size: 0.9em; /* Adjust font size */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
     margin-top: 10px; /* Add spacing above the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .read-more-link:hover {
