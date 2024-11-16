@@ -453,13 +453,13 @@ body {
 .article-card {
     background-color: #333; /* Dark grey background */
     color: #fff; /* White text */
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     width: 100%; /* Card will fill the grid column */
     height: 450px; /* Fixed height for all cards */
     display: flex;
     flex-direction: column; /* Arrange content vertically */
-    overflow: visible;; /* Prevent content overflow */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Article Image */
@@ -472,7 +472,6 @@ body {
 
 /* Article Details */
 .article-details {
-    overflow: visible;
     padding: 15px;
     flex: 1; /* Allow details to expand to fill space */
     display: flex;
@@ -484,7 +483,6 @@ body {
 .article-details h3 {
     font-size: 1.2em;
     color: #00aaff; /* Highlighted title color */
-    padding: 15px;
     margin-bottom: 10px;
 }
 
@@ -513,21 +511,30 @@ body {
     background-color: #222;
 }
 
-.read-more-link {
-    display: inline-block !important; /* Ensure it's displayed */
-    text-align: center;
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 0.9em;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+/* Article Inline Link (e.g., Medium Article, GitHub Repository) */
+.article-content a {
+    display: inline-block; /* Inline-block for better spacing */
+    color: #00aaff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Add space above the link */
+    font-weight: bold; /* Make it stand out */
+    font-size: 0.9em; /* Slightly smaller font size */
 }
 
-.read-more-link:hover {
-    background-color: #0056b3;
+.article-content a:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-container {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+
+    .article-card {
+        height: auto; /* Allow cards to resize based on content */
+    }
 }
 
 /* Volunteering Section */
