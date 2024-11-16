@@ -440,11 +440,12 @@ body {
     color: #ccc;
 }
 
+/* Article Section Styling */
 .article-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap; /* Allow multiple articles to wrap */
+    justify-content: center; /* Center align the articles */
+    gap: 20px; /* Add spacing between articles */
     margin: 20px 0;
 }
 
@@ -454,26 +455,26 @@ body {
     color: #fff; /* White text */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    max-width: 600px; /* Smaller width for the box */
+    max-width: 500px; /* Set smaller box width */
     margin: 0 auto;
     text-align: center;
 }
 
 .article-image {
-    width: 100%; /* Makes the image responsive */
-    max-width: 500px; /* Maximum width of the image */
-    height: auto; /* Keeps the aspect ratio */
-    border-radius: 5px; /* Matches the box rounding */
-    margin-bottom: 15px; /* Adds spacing below the image */
+    width: 100%; /* Full width of the card */
+    max-width: 480px; /* Maximum image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .article-details h3 {
-    font-size: 20px; /* Slightly smaller heading */
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .article-details p {
-    font-size: 14px; /* Smaller text for the details */
+    font-size: 14px;
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -481,7 +482,7 @@ body {
 .read-more-link {
     display: inline-block;
     padding: 10px 15px;
-    font-size: 14px; /* Smaller button text */
+    font-size: 14px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
