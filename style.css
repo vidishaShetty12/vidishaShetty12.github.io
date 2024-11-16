@@ -595,6 +595,35 @@ body {
     margin-top: 10px;
 }
 
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 250px; /* Limit the size of the image */
+    }
+
+    #volunteering {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .volunteering-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .volunteer-item {
+        text-align: center; /* Center align volunteer items */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
