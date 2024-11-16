@@ -513,18 +513,20 @@ body {
 
 /* Read More Link */
 .read-more-link {
+    display: inline-block; /* Ensure it's treated as a button */
     text-align: center;
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #007BFF; /* Blue background */
+    color: #fff; /* White text */
     padding: 10px 15px;
     font-size: 0.9em;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 10px; /* Add spacing above the button */
 }
 
 .read-more-link:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Volunteering Section */
