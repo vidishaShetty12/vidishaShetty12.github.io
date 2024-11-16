@@ -440,18 +440,6 @@ body {
     color: #ccc;
 }
 
-/* Volunteering Section */
-#volunteering {
-    padding: 50px 20px;
-    color: #fff;
-    text-align: center;
-}
-
-#volunteering h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
 .article-container {
     display: flex;
     justify-content: center;
@@ -468,7 +456,7 @@ body {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #333;
+    background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 0 auto;
@@ -504,6 +492,18 @@ body {
 
 .read-more-link:hover {
     background-color: #0056b3;
+}
+
+/* Volunteering Section */
+#volunteering {
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#volunteering h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 /* Container for Two-Column Grid */
