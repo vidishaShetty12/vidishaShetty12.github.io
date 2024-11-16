@@ -442,11 +442,11 @@ body {
 
 /* Article Container */
 .article-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    justify-content: center; /* Space between articles */
-    gap: 20px; /* Spacing between the cards */
-    margin: 20px 0;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Add consistent spacing between columns and rows */
+    margin: 20px auto; /* Center the grid */
+    max-width: 800px; /* Limit the width of the entire section */
 }
 
 /* Individual Article Card */
@@ -455,11 +455,11 @@ body {
     color: #fff; /* White text */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    width: 300px; /* Fixed width for uniform cards */
+    width: 100%; /* Card will fill the grid column */
     height: 450px; /* Fixed height for all cards */
-    overflow: hidden; /* Hide overflow for uniform layout */
     display: flex;
     flex-direction: column; /* Arrange content vertically */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Article Image */
@@ -494,6 +494,21 @@ body {
     overflow-y: auto; /* Enable vertical scrolling for content */
     height: 150px; /* Define fixed height for scrollable content */
     margin-bottom: 10px; /* Space below the content */
+    padding-right: 5px; /* Add some padding for scroll visibility */
+}
+
+/* Scrollbar Styling */
+.article-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.article-content::-webkit-scrollbar-thumb {
+    background-color: #00aaff;
+    border-radius: 4px;
+}
+
+.article-content::-webkit-scrollbar-track {
+    background-color: #222;
 }
 
 /* Read More Link */
