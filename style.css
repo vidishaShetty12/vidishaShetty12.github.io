@@ -552,6 +552,21 @@ body {
     margin-top: 10px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .skills-container,
+    .experience-container,
+    .projects-container {
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333;
