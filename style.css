@@ -484,6 +484,7 @@ body {
 .article-details h3 {
     font-size: 1.2em;
     color: #00aaff; /* Highlighted title color */
+    padding: 15px;
     margin-bottom: 10px;
 }
 
