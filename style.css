@@ -443,46 +443,63 @@ body {
 /* Article Section Styling */
 .article-container {
     display: flex;
-    flex-wrap: wrap; /* Allow multiple articles to wrap */
-    justify-content: center; /* Center align the articles */
-    gap: 20px; /* Add spacing between articles */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
     margin: 20px 0;
 }
 
 .article-card {
-    flex: 1 1 45%; /* Adjust width to take up 45% of the container */
-    padding: 15px;
     background-color: #333; /* Dark grey background */
     color: #fff; /* White text */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    max-width: 500px; /* Limit the maximum width */
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for cards */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article-image {
     width: 100%; /* Full width of the card */
-    max-width: 480px; /* Maximum image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px;
-    margin-bottom: 15px;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.article-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Fixed height for scrollable content */
 }
 
 .article-details h3 {
-    font-size: 20px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #00aaff; /* Highlighted title color */
+}
+
+.article-content {
+    font-size: 0.9em;
+    line-height: 1.6;
+    color: #ccc;
+    overflow-y: auto; /* Enable vertical scrolling for overflow content */
+    flex: 1;
     margin-bottom: 10px;
 }
 
-.article-details p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
+.article-content ul {
+    padding-left: 20px;
+    list-style: disc;
 }
 
 .read-more-link {
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 14px;
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 0.9em;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
