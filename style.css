@@ -450,13 +450,13 @@ body {
 }
 
 .article-card {
+    flex: 1 1 45%; /* Adjust width to take up 45% of the container */
     padding: 15px;
     background-color: #333; /* Dark grey background */
     color: #fff; /* White text */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    max-width: 500px; /* Set smaller box width */
-    margin: 0 auto;
+    max-width: 500px; /* Limit the maximum width */
     text-align: center;
 }
 
