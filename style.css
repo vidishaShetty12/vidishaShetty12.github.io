@@ -443,7 +443,7 @@ body {
 /* Article Container */
 .article-container {
     display: grid; /* Use grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    grid-template-columns: repeat(3, 1fr); /* Two columns of equal width */
     gap: 20px; /* Add consistent spacing between columns and rows */
     margin: 20px auto; /* Center the grid */
     max-width: 800px; /* Limit the width of the entire section */
